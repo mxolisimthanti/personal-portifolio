@@ -5,6 +5,7 @@
     --white: #fff;
 }
 
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +25,7 @@ body {
     top: 0;
     z-index: 10;
     background: var(--white);
+    border-bottom: 1px solid #eee; /* polish fix */
 }
 
 .menu {
@@ -68,10 +70,14 @@ body {
 .home-content {
     max-width: 1100px;
     margin: auto;
+    display: flex;                 /* FIX */
+    align-items: center;           /* FIX */
+    gap: 50px;
 }
 
 .profile-img {
     width: 280px;
+    border-radius: 12px;
     animation: fadeInLeft 1s ease;
 }
 
@@ -90,14 +96,11 @@ body {
 
 /* ===== About ===== */
 .about {
-    padding: 80px 40px;
+    padding: 60px 40px;
     background: var(--powder-blue);
     text-align: center;
 }
-.about {
-    padding: 60px 40px; /* instead of 80+ */
-}
-``
+
 .map-container {
     margin-bottom: 40px;
 }
@@ -105,10 +108,9 @@ body {
 .sa-svg {
     width: 240px;
     fill: var(--black);
-}
-.sa-svg {
     margin-top: -30px;
 }
+
 .sa-svg text {
     fill: var(--white);
     font-size: 28px;
@@ -134,7 +136,10 @@ body {
 
 .work-box {
     border: 2px solid var(--black);
-    padding: 40px;
+    aspect-ratio: 1 / 1;      /* SQUARE FIX ✅ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     transition: 0.3s;
 }
@@ -200,5 +205,8 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
+    .profile-img {
+        width: 200px;
+    }
 }
-``
