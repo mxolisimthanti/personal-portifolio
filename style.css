@@ -94,6 +94,9 @@ body {
     background: var(--powder-blue);
     text-align: center;
 }
+.map-container {
+    margin-bottom: 40px;
+}
 
 .sa-svg {
     width: 240px;
