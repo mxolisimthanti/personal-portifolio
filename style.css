@@ -102,7 +102,9 @@ body {
     width: 240px;
     fill: var(--black);
 }
-
+.sa-svg {
+    margin-top: -30px;
+}
 .sa-svg text {
     fill: var(--white);
     font-size: 28px;
