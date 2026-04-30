@@ -94,6 +94,10 @@ body {
     background: var(--powder-blue);
     text-align: center;
 }
+.about {
+    padding: 60px 40px; /* instead of 80+ */
+}
+``
 .map-container {
     margin-bottom: 40px;
 }
