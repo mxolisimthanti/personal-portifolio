@@ -122,7 +122,17 @@ body {
     max-width: 650px;
     margin: 30px auto 0;
 }
-
+.cv-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: var(--red);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+}
+``
 /* ===== Work ===== */
 .work {
     padding: 80px 40px;
