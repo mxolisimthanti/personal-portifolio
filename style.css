@@ -81,19 +81,14 @@ body {
     animation: fadeInLeft 1s ease;
 }
 
-.intro h1 {
-    font-size: 42px;
-}
 
-.intro h2 {
-    color: var(--red);
-    margin: 10px 0;
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   /* ✅ horizontal center */
+    text-align: center;    /* ✅ text center */
 }
-
-.intro p {
-    max-width: 450px;
-}
-
 /* ===== About ===== */
 .about {
     padding: 60px 40px;
